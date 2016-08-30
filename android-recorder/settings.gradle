@@ -1,0 +1,4 @@
+include ':app'
+//include 'GDLibrary'
+//project(':GDLibrary').projectDir = new File('../../libs/handheld/gd')
+//project(':GDLibrary').projectDir = new File('../../../Users/bcripps/AppData/Local/Android/sdk1/extras/good/dynamics_sdk/libs/handheld/gd')
