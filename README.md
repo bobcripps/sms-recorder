@@ -1,7 +1,4 @@
 # sms-recorder
-Demonstration of how to record SMS on Android to a file and use retrofit to upload the file to a server.
-Uses a BootReceiver launched Android Service and a Thread with a LinkedBlockingQueue to communicate with the SMS Content Listener.
-Currently very "raw" and requires more commenting and a proper UI (if required)
-NB: The original code was written pre-rxandroid so a TODO is to rewrite using more elegant reactive code
-
-
+Based on an SMS listener daemon I wrote as a PoC for a client some years ago. Saves SMS content to a file for upload to a server.
+A BootReceiver launched Android Service has a Thread which communicates with the SMS Content Listener by consuming a LinkedBlockingQueue produced on by the SMS Content Lstener.
+Currently very "raw" - The original code was written pre-rxandroid so a TODO is to rewrite using more elegant reactive code
